@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -name '*.gif' -execdir bash -c 'printf \"%s\\n\" \"$ {@%.*}\"' bash {} + | sort -f
+find . -type f -name '*.gif' -execdir bash -c 'printf \"%s\\n\" \"$ {@%.*}\"' bash {} + | LC_COLLATE=C sort -f
